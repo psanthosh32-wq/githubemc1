@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>restuarent — Book Now</title>
+</head>
+<body>
+
+<header>
+  <h1>Resturent bookin hotel rooms</h1>
+  <p><em>Your simple, markup-only reservation portal</em></p>
+  <nav>
+    <a href="index.html">Overview (Home)</a> | 
+    <a href="rooms.html">Available Rooms</a> | 
+    <a href="amenities.html">Hotel Amenities & Steps</a> | 
+    <a href="book.html"><strong>Book Your Stay</strong></a> | 
+    <a href="policies.html">Policies</a>
+  </nav>
+</header>
+
+<hr>
+
+<main>
+  <section >
+    <h2> Room Reservation Request Form</h2>
+    <p>Please fill out the form below to submit .</p>
+
+    <form>
+        <fieldset>
+        <legend><strong>Guest Information</strong></legend>
+        <p>
+          Full Name: <br>
+          <input type="text" required placeholder="Enter your name">
+        </p>
+        <p>
+          Email Address: <br>
+          <input type="email" required placeholder="Enter your mail">
+        </p>
+        <p>
+         Phone Number: <br>
+          <input type="tel"  required placeholder="Enter your number">
+        </p>
+        </fieldset>
+      
+
+      <br>
+
+      <fieldset>
+        <legend><strong>Stay Details</strong></legend>
+        <p>
+          Select Room Type:<br>
+          <select id="room-select"  required>
+            <option value="">-- Please select a room --</option>
+            <option value="suite">The day (5000 rupees/night)</option>
+            <option value="double">the nigth (6000 rupees/night)</option>
+          </select>
+        </p>
+        <p>
+          Check-in Date:<br>
+          <input type="date" required>
+        </p>
+        <p>
+         Check-out Date:<br>
+          <input type="date"  required>
+        </p>
+        <p>
+         Number of Guests:<br>
+          <input type="number"  min="1" max="4" value="1" required>
+        </p>
+      </fieldset>
+
+      <br>
+
+      <fieldset>
+        <legend><strong>Preferences & Add-ons</strong></legend>
+        <p>Bed Preference:</p>
+        <p>
+          <input type="radio" name = "bed-preference">
+         King Bed <br>
+          <input type="radio" name="bed-preference" >
+          Two Twin Beds
+        </p>
+        
+        <p>Extra Options:</p>
+        <p>
+          <input type="checkbox" name="addons" >
+          Include Daily Breakfast Buffet<br>
+          <input type="checkbox" name="addons" >
+          Request Airport Pickup Service
+        </p>
+
+        <p>
+         Special Requests / Notes:<br>
+          <textarea  rows="4" cols="40" placeholder="Let us know if you have any dietary restrictions or need a late arrival..."></textarea>
+        </p>
+      </fieldset>
+
+      <br>
+
+      <p>
+        <input type="submit" value="Submit Reservation Request">
+        <input type="reset" value="Clear Form">
+      </p>
+    </form>
+  </section>
+</main>
+
+<hr>
+
+<footer>
+  <p><small>&copy; 2026 HTML Luxury Stay Management System. All rights reserved.</small></p>
+</footer>
+
+</body>
+</html>
